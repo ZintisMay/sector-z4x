@@ -1,0 +1,65 @@
+*{
+    outline:2px dotted red;
+    margin:0;
+    padding:0;
+}
+body{
+    background-color:gray;
+}
+
+section{
+    width:100vw;
+    height:100vh;
+}
+
+.title{
+    /* max-width: 710px; */
+    display: inline-block;
+    /* width:80vw; */
+    min-width: 300px;
+}
+
+.title h1{
+    
+    text-align: center;
+    font-family: Orbitron;
+    font-weight: 100;
+    color:white;
+    font-size: 11vw;
+    display: flex;
+    justify-content:space-between;
+    text-shadow: .5rem .5rem 0 black;
+}
+.title h1 span{
+    font-size:10vw;
+    /* margin-top: -4rem; */
+}
+
+nav{
+
+}
+.menu ul{
+    display: none;
+}
+
+
+#splash{
+    background: url(./images/planet-581239.jpg) no-repeat center center / cover;
+    display: flex;
+    justify-content:center;
+    align-items:center;
+}
+#splash h1{
+}
+#whatIsZ4X{
+
+}
+#helpPlaytest{
+
+}
+#aboutMe{
+
+}
+#contact{
+
+}
