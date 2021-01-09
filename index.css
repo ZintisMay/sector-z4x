@@ -1,5 +1,5 @@
 *{
-    /* outline:2px dotted red; */
+    outline:2px dotted red;
     margin:0;
     padding:0;
 }
@@ -87,10 +87,11 @@ max-width: 500px;
 #whatIsZ4X{
     background-color: yellow;
     display: flex;
-    justify-content: center;
+    justify-content: flex-end;
     align-items: center;
-    flex-direction: column;
+    /* flex-direction: column; */
 }
+
 #helpPlaytest{
     background-color: purple;
 
@@ -102,4 +103,22 @@ max-width: 500px;
 #contact{
     background-color: green;
 
+}
+
+
+/* Utils */
+
+.half{
+  width:40%;
+  margin:5%;  
+}
+
+@media(max-width:600px){
+    #whatIsZ4X{
+        justify-content: center;
+    }
+    .half{
+        width:90%;
+        margin:5%;  
+      }
 }
