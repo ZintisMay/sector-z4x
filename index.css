@@ -1,5 +1,5 @@
 * {
-  /* outline: 2px dotted red; */
+  outline: 2px dotted red;
   margin: 0;
   padding: 0;
 }
@@ -34,12 +34,29 @@ section {
   min-height: 100vh;
 }
 
+.gallery{
+  display:flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+
 .bgImage{
   background-size:cover;
   background-position: center;
   min-width: 260px;
   min-height: 260px;
+  margin:5%;
   
+}
+.bgImage.small{
+  min-height: 130px;
+  min-width: 130px;
+}
+.bgImage.big{
+  width:90%;
+  min-height: 260px;
+  min-width: 260px;
 }
 
 
