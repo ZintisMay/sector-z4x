@@ -3,6 +3,7 @@
 <html lang="en">
   <head>
     <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
 
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald" />
@@ -18,50 +19,35 @@
   </head>
 
   <body>
+
     <nav>
       <a class="logo" href="#splash"></a>
       <div class="menu sciFiPanel" id="menu">
         <div class="line a"></div>
         <div class="line b"></div>
         <div class="line c"></div>
+
         <ul id="links">
-          <li><a href="#whatIsZ4X">What is Z4X?</a></li>
-          <li><a href="#helpPlaytest">Help Playtest!</a></li>
+          <li><a href="#what-is-z4x">What is Z4X?</a></li>
+          <li><a href="#i-need-playtesters">Help Playtest!</a></li>
+          
+          <li><a href="#video-title">Videos</a></li>
           <li><a href="#aboutMe">About Me</a></li>
           <li><a href="#contact">Contact</a></li>
         </ul>
+
       </div>
     </nav>
+
     <section id="splash">
       <img class="title" src="./images/title.png" />
     </section>
-    <div class="sectionHead">
+
+    <div class="sectionHead" id="what-is-z4x">
       <h1 class="center centerText sciFiPanel">What is Sector Z4X?</h1>
     </div>
-    <section id="whatIsZ4X">
-      <div class="half gallery">
-        <div
-          class="sciFiPanel bgImage big"
-          style="background-image: url(./images/fullgame.jpg)"
-        ></div>
-        <div
-          class="half sciFiPanel bgImage small"
-          style="background-image: url(./images/fullgame.jpg)"
-        ></div>
-        <div
-          class="half sciFiPanel bgImage small"
-          style="background-image: url(./images/fullgame.jpg)"
-        ></div>
-        <div
-          class="half sciFiPanel bgImage small"
-          style="background-image: url(./images/fullgame.jpg)"
-        ></div>
-        <div
-          class="half sciFiPanel bgImage small"
-          style="background-image: url(./images/fullgame.jpg)"
-        ></div>
-      </div>
 
+    <section id="whatIsZ4X">
       <div class="half sciFiPanel">
         <p class="bold">A space opera board game for 2-4 players</p>
         <p class="bold">40 Minutes per player</p>
@@ -85,23 +71,43 @@
           the next era.
         </p>
       </div>
+      <div class="half gallery">
+        <div
+          class="sciFiPanel bgImage big"
+          style="background-image: url(./images/fullgame.jpg)"
+        ></div>
+        <div
+          class="half sciFiPanel bgImage small"
+          style="background-image: url(./images/DiupEIMVMAA9lGU.jpg)"
+        ></div>
+        <div
+          class="half sciFiPanel bgImage small"
+          style="background-image: url(./images/DnQBnvvU8AAjIu6.jpg)"
+        ></div>
+        <div
+          class="half sciFiPanel bgImage small"
+          style="background-image: url(./images/fullgameSide.jpg)"
+        ></div>
+        <div
+          class="half sciFiPanel bgImage small"
+          style="background-image: url(./images/fullgameWhite.jpg)"
+        ></div>
+      </div>
     </section>
-    <div class="sectionHead">
+
+    <div class="sectionHead" id="i-need-playtesters">
       <h1 class="center centerText sciFiPanel">I NEED PLAY TESTERS!</h1>
     </div>
+
     <section id="helpPlaytest">
       <div class="full sciFiPanel">
         <p class="bold"></p>
         <p class="">
-          <b
-            >Do you like space games, 4X, grand strategy, civilization building,
-            area control and combat?</b
-          >
+          <b>Do you like space games, 4X, grand strategy, civilization building,
+            area control and combat?</b>
         </p>
         <p class="">
-          <b
-            >I NEED YOUR HELP!</b
-          >
+          <b>I NEED YOUR HELP!</b>
         </p>
         <p>
           I'm currently in talks with publishers and also continuing development
@@ -124,8 +130,22 @@
         </p>
       </div>
     </section>
+
+    <div class="sectionHead" id="video-title">
+      <h1 class="center centerText sciFiPanel">Intro Videos</h1>
+    </div>
+
+    <section id="videos">
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/anlTpMSCmxk" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/RuvJizW-0uc" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    </section>
     <section id="aboutMe"></section>
     <section id="contact"></section>
+
+    <div id="lightBox">
+      <div id="closeLightBox"></div>
+      <img id="lightBoxImage" />
+    </div>
   </body>
 
   <script src="index.js"></script>

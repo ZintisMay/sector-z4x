@@ -1,5 +1,5 @@
 * {
-  /* outline: 2px dotted red; */
+  outline: 2px dotted red;
   margin: 0;
   padding: 0;
 }
@@ -20,6 +20,7 @@ h5,
 h6 {
   margin-bottom: 1rem;
   font-weight: 100;
+  text-shadow: .1rem .1rem 0 black;
 }
 bold{
   font-weight: 900;
@@ -47,7 +48,7 @@ section {
   min-width: 260px;
   min-height: 260px;
   margin:5%;
-  
+  cursor: pointer;
 }
 .bgImage.small{
   min-height: 130px;
@@ -60,7 +61,7 @@ section {
 }
 
 
-
+/* Menu and Nav */
 
 nav {
   position: fixed;
@@ -76,10 +77,10 @@ div.menu {
   height: 25px;
   width: 30px;
   background-color:rgba(0,0,0,.5);
-  display: flex;
+  /* display: flex;
   flex-direction: column;
   justify-content: space-between;
-  align-items: center;
+  align-items: center; */
   z-index: 10000;
   position: relative;
 }
@@ -88,12 +89,71 @@ div.menu.show{
 }
 .menu .line {
   height: 2px;
-  width: 100%;
+  width: 75%;
   background-color: lightgreen;
-  /* box-shadow: 1px 1px 0 white; */
-  /* position: absolute; */
-  left: 0;
+  transform:translate(-50%, -50%);
+  position: absolute;
+  left: 50%;
+  opacity: 1;
+  transition:.5s;
 }
+.menu .line:nth-child(1){
+  top:20%;
+}
+.menu .line:nth-child(2){
+  top:50%;
+}
+.menu .line:nth-child(3){
+  top:80%;
+}
+
+.menu.show .line:nth-child(1){
+  animation: line1 .5s linear;
+  top:50%;
+  transform:translate(-50%, -50%) rotate(-45deg);
+}
+.menu.show .line:nth-child(2){
+  opacity: 0;
+}
+.menu.show .line:nth-child(3){
+  animation: line2 .5s linear;
+  top:50%;
+  transform:translate(-50%, -50%) rotate(45deg);
+}
+
+.menu.unShow .line:nth-child(1){
+  animation: line1a .5s linear;
+}
+/* .menu.unShow .line:nth-child(2){
+} */
+.menu.unShow .line:nth-child(3){
+  animation: line2a .5s linear;
+}
+
+/* MENU ANIMATIONS */
+
+@keyframes line1{
+  0%{top:20%;transform:translate(-50%, -50%) rotate(0deg);}
+  50%{top:50%;transform:translate(-50%, -50%) rotate(0deg);}
+  100%{top:50%;transform:translate(-50%, -50%) rotate(45deg);}
+}
+@keyframes line2{
+  0%{top:80%;transform:translate(-50%, -50%) rotate(0deg);}
+  50%{top:50%;transform:translate(-50%, -50%) rotate(0deg);}
+  100%{top:50%;transform:translate(-50%, -50%) rotate(-45deg);}
+}
+@keyframes line1a{
+  0%{top:50%;transform:translate(-50%, -50%) rotate(45deg);}
+  50%{top:50%;transform:translate(-50%, -50%) rotate(0deg);}
+  100%{top:20%;transform:translate(-50%, -50%) rotate(0deg);}
+}
+@keyframes line2a{
+  0%{top:50%;transform:translate(-50%, -50%) rotate(-45deg);}
+  50%{top:50%;transform:translate(-50%, -50%) rotate(0deg);}
+  100%{top:80%;transform:translate(-50%, -50%) rotate(0deg);}
+}
+
+/* MENU STYLES */
 
 .menu ul {
   position: fixed;
@@ -108,6 +168,7 @@ div.menu.show{
   justify-content: center;
   align-items: center;
   background-color: darkcyan;
+  padding-top:25px;
 }
 .menu.show ul {
   display: flex;
@@ -116,8 +177,10 @@ div.menu.show{
   margin: 20px;
   font-size: 2rem;
   list-style-type: none;
+  text-align: center;
 }
 .menu ul li a {
+  text-align: center;
   text-decoration: none;
   text-shadow: 1px 1px 0 white;
   color: black;
@@ -126,7 +189,52 @@ a:visited {
   color: black;
 } /* visited link */
 
+/* LIGHTBOX STYLES */
 
+#lightBox{
+  display:none;
+  opacity: 0;
+  height:100%;
+  width:100%;
+  position: fixed;
+  top:0;
+  left:0;
+  transition:.5s;
+  z-index: 100000;
+}
+#lightBox.show{
+  opacity: 1;
+  display:flex;
+  background-color:rgba(0,0,0,.7);
+  justify-content: center;
+  align-items: center;
+}
+#lightBox #lightBoxImage{
+  width:90vmin;
+
+}
+#lightBox #closeLightBox{
+  position: fixed;
+  top:35px;
+  left:calc(100% - 35px);
+  height:50px;
+  width:50px;
+}
+#lightBox #closeLightBox:before,#lightBox #closeLightBox:after{
+  content:"";
+  position: absolute;
+  height:2px;
+  width:100%;
+  background-color: lightgreen;
+  transform:translate(-50%, -50%) rotate(-45deg);
+}
+#lightBox #closeLightBox:after{
+
+  transform:translate(-50%, -50%) rotate(45deg);
+}
+
+
+/* SECTINO styles */
 
 
 #splash {
@@ -150,7 +258,10 @@ a:visited {
 }
 
 #helpPlaytest {
-  background-color: purple;
+  /* background-color: purple; */
+  background-image: url(./images/orion-nebula-11107.jpg);
+  /* background-size: cover; */
+  /* background-position: center; */
   display: flex;
   justify-content: space-around;
   align-items: center;
@@ -160,6 +271,15 @@ a:visited {
 #helpPlaytest > div{
   text-align: center;
 }
+
+#videos{
+display: flex;
+justify-content: space-around;
+align-items: center;
+min-height: 0;
+padding:100px 0;
+}
+
 #aboutMe {
   background-color: blue;
 }
@@ -190,6 +310,8 @@ justify-content:center;
 padding: 20px 0;
 /* height:calc(100% + 20px); */
 }
+
+
 .sciFiPanel {
   padding: 10px;
   /* border: 3px solid lightgreen; */
@@ -216,12 +338,9 @@ padding: 20px 0;
   width:calc(100% + 12px);
   height:calc(100% + 12px);
 }
-/* .sciFiPanel:after{
-  width:calc(100% + 14px);
-  height:calc(100% + 14px);
-  top:-7px;
-  left:-7px;
-} */
+.menu.sciFiPanel:before{
+  background-color: black;
+}
 
 @media (max-width: 900px) {
   #whatIsZ4X {
@@ -235,4 +354,12 @@ padding: 20px 0;
   .sectionHead h1{
     width: 80%;
   }
+  .bgImage.small{
+    width:90%;
+    min-height: 260px;
+    min-width:260px;
+  }
 }
+
+
+
