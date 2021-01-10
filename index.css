@@ -1,5 +1,5 @@
 * {
-  outline: 2px dotted red;
+  /* outline: 2px dotted red; */
   margin: 0;
   padding: 0;
 }
@@ -156,6 +156,9 @@ a:visited {
   align-items: center;
   flex-wrap: wrap;
   min-height: 0px;
+}
+#helpPlaytest > div{
+  text-align: center;
 }
 #aboutMe {
   background-color: blue;
