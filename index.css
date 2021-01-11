@@ -96,8 +96,10 @@ div.menu.show {
   transform: translate(-50%, -50%);
   position: absolute;
   left: 50%;
+  z-index: 1000000;
   opacity: 1;
   transition: 0.5s;
+  pointer-events: none;
 }
 .menu .line:nth-child(1) {
   top: 20%;
@@ -205,8 +207,9 @@ div.menu.show {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background-color: darkcyan;
-  padding-top: 25px;
+  /* background-color: darkcyan; */
+  background: url(./images/1200planet.jpg) no-repeat center center / cover;
+  /* padding-top: 25px; */
 }
 .menu.show ul {
   display: flex;
@@ -214,14 +217,15 @@ div.menu.show {
 .menu ul li {
   margin: 20px;
   font-size: 2rem;
-  list-style-type: none;
+  list-style: square inside url(./images/ship.png);
+  
   text-align: center;
 }
 .menu ul li a {
   text-align: center;
   text-decoration: none;
-  text-shadow: 1px 1px 0 white;
-  color: black;
+  text-shadow: 2px 2px 0 black;
+  color: white;
 }
 
 /* LIGHTBOX STYLES */
@@ -267,7 +271,7 @@ div.menu.show {
   transform: translate(-50%, -50%) rotate(45deg);
 }
 
-/* SECTINO styles */
+/* section styles */
 
 #splash {
   background: url(./images/1200planet.jpg) no-repeat center center / cover;
@@ -288,6 +292,9 @@ div.menu.show {
   align-items: center;
   flex-wrap: wrap;
   /* flex-direction: column; */
+}
+#whatIsZ4X .textPanel > *{
+  margin:20px;
 }
 
 #helpPlaytest {
@@ -347,21 +354,46 @@ width: 260px;
 }
 
 .margin10{
-  margin:10px;
+  margin:10px !important;
 }
 .margin20{
-  margin:20px;
+  margin:20px !important;
 }
 .margin25{
-  margin:25px;
+  margin:25px !important;
+}
+.margin30{
+  margin:30px !important;
 }
 .margin5{
-  margin:5px;
+  margin:5px !important;
 }
 .margin50{
-  margin:50px;
+  margin:50px !important;
 }
 
+.padding10{
+  padding:10px !important;
+}
+.padding20{
+  padding:20px !important;
+}
+.padding25{
+  padding:25px !important;
+}
+.padding30{
+  padding:30px !important;
+}
+.padding5{
+  padding:5px !important;
+}
+.padding50{
+  padding:50px !important;
+}
+
+.noClick{
+  pointer-events: none;
+}
 .flex{
   display:flex;
   justify-content: center;
@@ -415,12 +447,15 @@ width: 260px;
   width: calc(100% + 12px);
   height: calc(100% + 12px);
 }
-.menu.sciFiPanel:before {
+.menu.sciFiPanel {
   background-color: black;
 }
+/* .menu.button:hover .line{
+  background-color:black;
+} */
 .button:hover{
-  background-color:lightgreen;
-  color:black;
+  background-color:lightgreen !important;
+  color:black  !important;
   transition:1s;
   cursor: pointer;
 }
