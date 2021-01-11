@@ -9,7 +9,7 @@ window.addEventListener("click", function (e) {
 });
 
 function log(...args) {
-  if(window.location.href.includes("127.0.0.1")){
+  if (window.location.href.includes("127.0.0.1")) {
     console.log(...args);
   }
 }

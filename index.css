@@ -19,7 +19,7 @@ h3,
 h4,
 h5,
 h6 {
-  color:lightgreen;
+  color: lightgreen;
   margin-bottom: 1rem;
   font-weight: 100;
   text-shadow: 0.1rem 0.1rem 0 black;
@@ -59,8 +59,8 @@ section {
   min-height: 260px;
   min-width: 260px;
 }
-.cavePaintingsLink{
-  display:block;
+.cavePaintingsLink {
+  display: block;
 }
 
 /* Menu and Nav */
@@ -218,7 +218,7 @@ div.menu.show {
   margin: 20px;
   font-size: 2rem;
   list-style: square inside url(./images/ship.png);
-  
+
   text-align: center;
 }
 .menu ul li a {
@@ -293,8 +293,8 @@ div.menu.show {
   flex-wrap: wrap;
   /* flex-direction: column; */
 }
-#whatIsZ4X .textPanel > *{
-  margin:20px;
+#whatIsZ4X .textPanel > * {
+  margin: 20px;
 }
 
 #helpPlaytest {
@@ -334,11 +334,11 @@ div.menu.show {
   align-items: center;
   flex-wrap: wrap;
   min-height: 0;
-  padding:50px 0;
+  padding: 50px 0;
 }
-#aboutMe .profile{
-height: 260px;
-width: 260px;
+#aboutMe .profile {
+  height: 260px;
+  width: 260px;
 }
 
 #contact {
@@ -353,49 +353,49 @@ width: 260px;
   display: inline-block;
 }
 
-.margin10{
-  margin:10px !important;
+.margin10 {
+  margin: 10px !important;
 }
-.margin20{
-  margin:20px !important;
+.margin20 {
+  margin: 20px !important;
 }
-.margin25{
-  margin:25px !important;
+.margin25 {
+  margin: 25px !important;
 }
-.margin30{
-  margin:30px !important;
+.margin30 {
+  margin: 30px !important;
 }
-.margin5{
-  margin:5px !important;
+.margin5 {
+  margin: 5px !important;
 }
-.margin50{
-  margin:50px !important;
-}
-
-.padding10{
-  padding:10px !important;
-}
-.padding20{
-  padding:20px !important;
-}
-.padding25{
-  padding:25px !important;
-}
-.padding30{
-  padding:30px !important;
-}
-.padding5{
-  padding:5px !important;
-}
-.padding50{
-  padding:50px !important;
+.margin50 {
+  margin: 50px !important;
 }
 
-.noClick{
+.padding10 {
+  padding: 10px !important;
+}
+.padding20 {
+  padding: 20px !important;
+}
+.padding25 {
+  padding: 25px !important;
+}
+.padding30 {
+  padding: 30px !important;
+}
+.padding5 {
+  padding: 5px !important;
+}
+.padding50 {
+  padding: 50px !important;
+}
+
+.noClick {
   pointer-events: none;
 }
-.flex{
-  display:flex;
+.flex {
+  display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
@@ -453,10 +453,16 @@ width: 260px;
 /* .menu.button:hover .line{
   background-color:black;
 } */
-.button:hover{
-  background-color:lightgreen !important;
-  color:black  !important;
-  transition:1s;
+.button {
+  display: inline-block;
+}
+.button a {
+  text-decoration: none;
+}
+.button:hover {
+  background-color: lightgreen !important;
+  color: black !important;
+  transition: 1s;
   cursor: pointer;
 }
 
