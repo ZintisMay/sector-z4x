@@ -335,7 +335,7 @@ width: 260px;
 }
 
 #contact {
-  background-color: green;
+  /* background-color: green; */
   padding: 50px 0;
   min-height: 0;
 }
@@ -417,6 +417,12 @@ width: 260px;
 }
 .menu.sciFiPanel:before {
   background-color: black;
+}
+.button:hover{
+  background-color:lightgreen;
+  color:black;
+  transition:1s;
+  cursor: pointer;
 }
 
 /* MOBILE SIZE? */
