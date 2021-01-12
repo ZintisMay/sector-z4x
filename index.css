@@ -9,6 +9,7 @@ html {
 }
 body {
   background-color: black;
+  overflow-x:hidden;
 }
 a,
 a:visited,
@@ -39,24 +40,28 @@ section {
 
 .gallery {
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-wrap: wrap;
+}
+.gallery .bgImage{
+  margin-bottom:40px;
 }
 .bgImage {
   background-size: cover;
   background-position: center;
   min-width: 260px;
   min-height: 260px;
-  margin: 5%;
+  /* margin: 5%; */
   cursor: pointer;
 }
 .bgImage.small {
+  width: 43%;
   min-height: 130px;
   min-width: 130px;
 }
 .bgImage.big {
-  width: 90%;
+  width: 100%;
   min-height: 260px;
   min-width: 260px;
 }
@@ -71,7 +76,7 @@ nav {
   top: 0;
   left: 0;
   z-index: 1000;
-  width: 100%;
+  width: 100vw;
   display: flex;
   justify-content: flex-end;
 }
@@ -202,7 +207,7 @@ div.menu.show {
   display: none;
   top: 0;
   left: 0;
-  height: 100%;
+  height: 100vh;
   width: 100%;
 
   flex-direction: column;
@@ -290,9 +295,12 @@ div.menu.show {
   background-color: black;
   display: flex;
   justify-content: space-around;
-  align-items: center;
+  align-items: flex-start;
   flex-wrap: wrap;
   /* flex-direction: column; */
+}
+#whatIsZ4X .textPanel{
+  /* margin:20px; */
 }
 #whatIsZ4X .textPanel > * {
   margin: 20px;
@@ -333,7 +341,7 @@ div.menu.show {
   margin: 20px;
 }
 #videos .videoPanel iframe{
-
+  width:100%;
 }
 #videos a {
   color: lightgreen;
@@ -345,6 +353,7 @@ div.menu.show {
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
+  background-repeat: no-repeat;
   min-height: 0;
   background-size: cover;
   background-position: center;
@@ -362,6 +371,13 @@ div.menu.show {
   /* background-color: green; */
   /* padding: 50px 0; */
   min-height: 0;
+}
+
+#footer{
+  width:100%;
+  /* margin-left:-5%; */
+  margin-bottom: -20px;
+  height:75px;
 }
 
 /* Utils */
@@ -483,6 +499,9 @@ div.menu.show {
   width: calc(100% + 6px);
   height: calc(100% + 6px);
 }
+.sciFiPanel.dark:before{
+  background-color:rgba(0, 0, 0, 0.5);
+}
 .menu.sciFiPanel {
   background-color: black;
 }
@@ -510,20 +529,37 @@ div.menu.show {
     justify-content: center;
   }
   .half {
-    width: calc(90% - 20px);
+    width: calc(90%);
     margin: 5%;
+  }
+  .sectionHead{
+    width: 100%;
   }
 
   .sectionHead h1 {
-    width: 80%;
-  }
-  .bgImage.small {
     width: 90%;
+    padding-left:0;
+    padding-right:0;
+    font-size: 1.5rem;
+  }
+  .gallery{
+    margin:5%;
+  }
+  .bgImage.small, .bgImage.big {
+    width: 90vw;
+    padding:0px;
+    /* margin:10px 0; */
     min-height: 260px;
     min-width: 260px;
   }
   .menu ul li {
 
   font-size: 1.2rem;
+  }
+
+  #description .mechanics{
+    font-size: 1rem;
+    width:250px;
+    min-width: 0;
   }
 }
