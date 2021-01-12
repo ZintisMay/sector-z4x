@@ -1,5 +1,5 @@
 * {
-  /* outline: 2px dotted red; */
+  /* outline: 1px dotted red; */
   margin: 0;
   padding: 0;
 }
@@ -23,6 +23,7 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 100;
   text-shadow: 0.1rem 0.1rem 0 black;
+
 }
 
 bold {
@@ -224,7 +225,7 @@ div.menu.show {
 .menu ul li a {
   text-align: center;
   text-decoration: none;
-  text-shadow: 2px 2px 0 black;
+  /* text-shadow: 2px 2px 0 black; */
   color: white;
 }
 
@@ -296,6 +297,15 @@ div.menu.show {
 #whatIsZ4X .textPanel > * {
   margin: 20px;
 }
+#description {
+  min-height: 0;
+}
+#description .flex{
+  justify-content: space-around;
+}
+#description .mechanics{
+  min-width: 265px;
+}
 
 #helpPlaytest {
   /* background-color: purple; */
@@ -317,11 +327,13 @@ div.menu.show {
   justify-content: space-around;
   align-items: center;
   min-height: 0;
-  padding: 50px 0;
   flex-wrap: wrap;
 }
 #videos .videoPanel {
   margin: 20px;
+}
+#videos .videoPanel iframe{
+
 }
 #videos a {
   color: lightgreen;
@@ -334,16 +346,21 @@ div.menu.show {
   align-items: center;
   flex-wrap: wrap;
   min-height: 0;
-  padding: 50px 0;
+  background-size: cover;
+  background-position: center;
 }
 #aboutMe .profile {
   height: 260px;
   width: 260px;
 }
+#aboutMe .cavePaintingsImage{
+  width: 200px;
+}
+
 
 #contact {
   /* background-color: green; */
-  padding: 50px 0;
+  /* padding: 50px 0; */
   min-height: 0;
 }
 
@@ -351,6 +368,24 @@ div.menu.show {
 .center {
   margin: 0 auto;
   display: inline-block;
+}
+
+.darken{
+  position: relative;
+}
+.darken *{
+  position: relative;
+  z-index: 100;
+}
+.darken:before{
+  position: absolute;
+  top:0;
+  left:0;
+  content:"";
+  height:100%;
+  width:100%;
+  /* z-index: 0; */
+  background-color: rgba(0,0,0,.5);
 }
 
 .margin10 {
@@ -443,9 +478,10 @@ div.menu.show {
   /* background-color: rgba(0,0,0,.5); */
 }
 .sciFiPanel:before {
-  border-radius: 16px;
-  width: calc(100% + 12px);
-  height: calc(100% + 12px);
+  border-width:1px ;
+  border-radius: 12px;
+  width: calc(100% + 6px);
+  height: calc(100% + 6px);
 }
 .menu.sciFiPanel {
   background-color: black;
@@ -462,6 +498,7 @@ div.menu.show {
 .button:hover {
   background-color: lightgreen !important;
   color: black !important;
+  text-shadow: none;
   transition: 1s;
   cursor: pointer;
 }
@@ -484,5 +521,9 @@ div.menu.show {
     width: 90%;
     min-height: 260px;
     min-width: 260px;
+  }
+  .menu ul li {
+
+  font-size: 1.2rem;
   }
 }
