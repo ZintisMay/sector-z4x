@@ -1,7 +1,7 @@
 window.addEventListener("click", function (e) {
   log(e)
   window.target = e.target
-  if (e.target.id == "menu") toggleMenu()
+  if (e.target.id == "hamburger") toggleMenu()
   if (e.target.tagName == "A") closeMenu()
   if (e.target.classList.contains("bgImage")) openLightBox(e)
   if (["lightBox", "closeLightBox"].includes(e.target.id)) closeLightBox()
@@ -18,9 +18,13 @@ function log(...args) {
 function toggleMenu() {
   log("toggleMenu")
   if (menu.classList.contains("show")) {
+    hamburger.classList.remove("X");
+    hamburger.classList.add("notX");
     menu.classList.remove("show")
     menu.classList.add("unShow")
   } else {
+    hamburger.classList.add("X");
+    hamburger.classList.remove("notX");
     menu.classList.add("show")
     menu.classList.remove("unShow")
   }
