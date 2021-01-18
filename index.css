@@ -52,7 +52,6 @@ section {
   background-position: center;
   min-width: 260px;
   min-height: 260px;
-  /* margin: 5%; */
   cursor: pointer;
 }
 .bgImage.small {
@@ -84,16 +83,9 @@ div.menu {
   margin: 20px 40px;
   height: 25px;
   width: 30px;
-  background-color: rgba(0, 0, 0, 0.5);
-  /* display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center; */
   z-index: 10000;
   position: relative;
-}
-div.menu.show {
-  z-index: 1000;
+  
 }
 .menu .line {
   height: 2px;
@@ -134,8 +126,6 @@ div.menu.show {
 .menu.unShow .line:nth-child(1) {
   animation: line1a 0.5s linear;
 }
-/* .menu.unShow .line:nth-child(2){
-} */
 .menu.unShow .line:nth-child(3) {
   animation: line2a 0.5s linear;
 }
@@ -213,9 +203,7 @@ div.menu.show {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  /* background-color: darkcyan; */
   background: url(./images/1200planet.jpg) no-repeat center center / cover;
-  /* padding-top: 25px; */
 }
 .menu.show ul {
   display: flex;
@@ -230,7 +218,6 @@ div.menu.show {
 .menu ul li a {
   text-align: center;
   text-decoration: none;
-  /* text-shadow: 2px 2px 0 black; */
   color: white;
 }
 
@@ -297,15 +284,12 @@ div.menu.show {
   justify-content: space-around;
   align-items: flex-start;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-}
-#whatIsZ4X .textPanel{
-  /* margin:20px; */
 }
 #whatIsZ4X .textPanel > * {
   margin: 20px;
 }
 #description {
+  width:calc(90% - 40px);
   min-height: 0;
   padding:20px;
 }
@@ -317,9 +301,7 @@ div.menu.show {
 }
 
 #helpPlaytest {
-  /* background-color: purple; */
-  background-image: url(./images/orion-nebula-11107.jpg);
-  /* background-size: cover; */
+  background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./images/orion-nebula-11107.jpg);
   background-position: center;
   display: flex;
   justify-content: space-around;
@@ -352,7 +334,9 @@ div.menu.show {
 }
 
 #aboutMe {
-  /* background-color: blue; */
+  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./images/universe2.jpg);
+  background-size:cover;
+  background-repeat: no-repeat;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -372,14 +356,11 @@ div.menu.show {
 
 
 #contact {
-  /* background-color: green; */
-  /* padding: 50px 0; */
   min-height: 0;
 }
 
 #footer{
   width:100%;
-  /* margin-left:-5%; */
   margin-bottom: -20px;
   height:75px;
 }
@@ -404,7 +385,6 @@ div.menu.show {
   content:"";
   height:100%;
   width:100%;
-  /* z-index: 0; */
   background-color: rgba(0,0,0,.5);
 }
 
@@ -471,14 +451,12 @@ div.menu.show {
   display: flex;
   justify-content: center;
   padding: 50px 0 20px 0;
-  /* height:calc(100% + 20px); */
 }
 
 /* SCIFI PANEL */
 
 .sciFiPanel {
   padding: 10px;
-  /* border: 3px solid lightgreen; */
   border-radius: 10px;
   position: relative;
   color: lightgreen;
@@ -496,7 +474,6 @@ div.menu.show {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  /* background-color: rgba(0,0,0,.5); */
 }
 .sciFiPanel:before {
   border-width:1px ;
@@ -507,12 +484,7 @@ div.menu.show {
 .sciFiPanel.dark:before{
   background-color:rgba(0, 0, 0, 0.5);
 }
-.menu.sciFiPanel {
-  background-color: black;
-}
-/* .menu.button:hover .line{
-  background-color:black;
-} */
+
 .button {
   display: inline-block;
 }
@@ -561,7 +533,6 @@ div.menu.show {
   .bgImage.small, .bgImage.big {
     width: 90vw;
     padding:0px;
-    /* margin:10px 0; */
     min-height: 260px;
     min-width: 260px;
   }
@@ -573,7 +544,6 @@ div.menu.show {
   #description .mechanics{
     font-size: 1rem;
     width:250px;
-    /* min-width: 0; */
   }
 }
 
@@ -581,7 +551,6 @@ div.menu.show {
   #description .mechanics{
     font-size: 1rem;
     width:calc(100% - 40px);
-    /* min-width: 0; */
   }
   #description .mechanicsLink{
     width:calc(100%);
@@ -592,4 +561,8 @@ div.menu.show {
   #videos .videoPanel{
     width:90%;
   }
+  
+#description .mechanics{
+  min-width: 180px;
+}
 }
