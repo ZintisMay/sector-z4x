@@ -26,11 +26,14 @@ h6 {
   text-shadow: 0.1rem 0.1rem 0 black;
 
 }
+h1{
+  font-size: 3rem;
+}
 h2{
   font-size: 1.5rem;
 }
 h3{
-  font-size: 1.5rem;
+  font-size: 1rem;
 }
 
 bold {
@@ -293,6 +296,9 @@ div.menu {
 }
 #whatIsZ4X .textPanel > * {
   margin: 20px;
+}
+.subTitle{
+  font-size: .7em;
 }
 #description {
   width:calc(90% - 40px);
