@@ -316,13 +316,15 @@ div.menu {
   background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./images/orion-nebula-11107.jpg);
   background-position: center;
   display: flex;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-height: 0px;
+  padding: 20px 0
 }
 #helpPlaytest > div {
   text-align: center;
+  margin:0;
 }
 
 #videos {
