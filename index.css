@@ -24,7 +24,6 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 100;
   text-shadow: 0.1rem 0.1rem 0 black;
-
 }
 
 bold {
@@ -298,6 +297,11 @@ div.menu {
 }
 #description .mechanics{
   min-width: 270px;
+}
+#description .mechanicsTitle{
+  width:270px;
+  margin:10px auto 20px auto;
+  display: block;
 }
 
 #helpPlaytest {

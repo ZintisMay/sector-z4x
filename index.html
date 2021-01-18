@@ -4,6 +4,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="/images/appleIcon.png" />
 
     <title>The HTML5 Herald</title>
     <meta name="description" content="The HTML5 Herald" />
@@ -25,7 +26,7 @@
     <meta name="twitter:title"             content="Sector Z4X: The Boardgame">
     <meta name="twitter:description"       content="A 4X board game in need of playtesters!">
     <meta name="twitter:creator"           content="@creator_username">
-    <meta name="twitter:image"             content="/images/metaCard.png">
+    <meta name="twitter:image"             content="https://zintismay.github.io/sector-z4x/images/metaCard.png">
     <meta name="twitter:domain"            content="YourDomain.com">
 
     <!-- 1200x630 -->
@@ -33,14 +34,14 @@
     <meta property="og:type"               content="article" />
     <meta property="og:title"              content="Sector Z4X: The Boardgame" />
     <meta property="og:description"        content="A 4X board game in need of playtesters!" />
-    <meta property="og:image"              content="/images/metaCard.png" />
+    <meta property="og:image"              content="https://zintismay.github.io/sector-z4x/images/metaCard.png" />
     
-
+    <link rel="apple-touch-icon" href="/images/appleIcon.png"/>
   </head>
 
   <body>
     <nav>
-      <a class="logo" href="#splash"></a>
+      <!-- <a class="logo" href="#splash"></a> -->
       <div class="menu sciFiPanel" id="menu">
         <div class="line a"></div>
         <div class="line b"></div>
@@ -58,11 +59,11 @@
     </nav>
 
     <section id="splash">
-      <img class="title" src="./images/title.png" />
+      <img class="title" src="./images/title.png" alt="Dawn over a planet" title="Sector Z4X Title Image" loading="lazy"/>
     </section>
 
     <div class="sectionHead" id="what-is-z4x">
-      <h1 class="center centerText sciFiPanel">What is Sector Z4X?</h1>
+      <h1 class="center centerText sciFiPanel">Sector Z4X:<br><span class="smallTitle">A Grand Strategy Board Game</span></h1>
     </div>
 
     <section id="whatIsZ4X">
@@ -118,7 +119,7 @@
     </section>
 
     <div class="sectionHead" id="game-description">
-      <h1 class="center centerText sciFiPanel">Description</h1>
+      <h2 class="center centerText sciFiPanel">Description</h2>
     </div>
 
     <section class="full sciFiPanel" id="description">
@@ -137,6 +138,7 @@
         with a sense of exploring the unknown as a different combination of tiles
         and cards come together.
       </p>
+      <h3 class="center centerText mechanicsTitle"><bold>Mechanics:</bold></h3>
       <div class="flex">
         <a
           target="_blank"
@@ -196,7 +198,7 @@
     </section>
 
     <div class="sectionHead" id="i-need-playtesters">
-      <h1 class="center centerText sciFiPanel">I NEED PLAY TESTERS!</h1>
+      <h2 class="center centerText sciFiPanel">I NEED PLAY TESTERS!</h2>
     </div>
 
     <section id="helpPlaytest">
@@ -235,7 +237,7 @@
     </section>
 
     <div class="sectionHead" id="video-title">
-      <h1 class="center centerText sciFiPanel">Short Videos</h1>
+      <h2 class="center centerText sciFiPanel">Short Videos</h2>
     </div>
 
     <section id="videos">
@@ -270,7 +272,7 @@
     </section>
 
     <div class="sectionHead" id="about-me">
-      <h1 class="center centerText sciFiPanel">About Me</h1>
+      <h2 class="center centerText sciFiPanel">About Me</h2>
     </div>
 
     <section id="aboutMe" class="">
@@ -299,12 +301,15 @@
           <img
             class="cavePaintingsImage"
             src="https://cf.geekdo-images.com/1lymSk0HABESb9YhCvc2cw__itemrep/img/XOU6bfI-ly9xms4X2Q1K9Xucpds=/fit-in/246x300/filters:strip_icc()/pic4194522.jpg"
+            alt="Cave Paintings Board Game Cover"
+            title="Cave Paintings"
+            loading="lazy"
         /></a>
       </div>
     </section>
 
     <div class="sectionHead" id="contact-me">
-      <h1 class="center centerText sciFiPanel">Contact</h1>
+      <h2 class="center centerText sciFiPanel">Contact</h2>
     </div>
     <section id="contact" class="flex">
       <a href="https://twitter.com/zintismay" target="_blank" class="sciFiPanel"
@@ -313,17 +318,17 @@
     </section>
 
     <div class="sectionHead" id="sign-up">
-      <h1 class="center centerText sciFiPanel">Playtest Signup</h1>
+      <h2 class="center centerText sciFiPanel">Playtest Signup</h2>
     </div>
     <section class="center centerText" id="signup">
-      <h1 class="center centerText sciFiPanel button margin20" id="openSignup">
+      <h2 class="center centerText sciFiPanel button margin20" id="openSignup">
         Click here to playtest!
-      </h1>
+      </h2>
     </section>
 
     <div id="lightBox">
       <div id="closeLightBox"></div>
-      <img id="lightBoxImage" />
+      <img id="lightBoxImage" loading="lazy"/>
     </div>
 
     <footer id="footer" class="flex" style="background-image:url(./images/universe2.jpg)">
