@@ -511,6 +511,15 @@ div.hamburger {
   transition: 1s;
   cursor: pointer;
 }
+.button.yellow, body .yellow{
+  color:yellow;
+}
+.button.yellow:before, .button.yellow:after{
+  border-color:yellow;
+}
+.button.yellow:hover {
+  background-color: yellow !important;
+}
 
 @media(max-width: 1200px){
   
