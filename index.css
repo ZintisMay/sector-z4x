@@ -9,7 +9,7 @@ html {
 }
 body {
   background-color: black;
-  overflow-x:hidden;
+  overflow-x: hidden;
 }
 a,
 a:visited,
@@ -24,15 +24,14 @@ h6 {
   margin-bottom: 1rem;
   font-weight: 100;
   text-shadow: 0.1rem 0.1rem 0 black;
-
 }
-h1{
+h1 {
   font-size: 3rem;
 }
-h2{
+h2 {
   font-size: 1.5rem;
 }
-h3{
+h3 {
   font-size: 1rem;
 }
 
@@ -53,8 +52,8 @@ section {
   align-items: center;
   flex-wrap: wrap;
 }
-.gallery .bgImage{
-  margin-bottom:40px;
+.gallery .bgImage {
+  margin-bottom: 40px;
 }
 .bgImage {
   background-size: cover;
@@ -296,34 +295,35 @@ div.hamburger {
 #whatIsZ4X .textPanel > * {
   margin: 20px;
 }
-.subTitle{
-  font-size: .7em;
+.subTitle {
+  font-size: 0.7em;
 }
 #description {
-  width:calc(90% - 40px);
+  width: calc(90% - 40px);
   min-height: 0;
-  padding:20px;
+  padding: 20px;
 }
-#description .flex{
+#description .flex {
   justify-content: space-around;
 }
-#description .mechanics{
+#description .mechanics {
   min-width: 270px;
 }
 
 #helpPlaytest {
-  background:linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./images/orion-nebula-11107.jpg);
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/orion-nebula-11107.jpg);
   background-position: center;
   display: flex;
   justify-content: center;
   align-items: center;
   flex-wrap: wrap;
   min-height: 0px;
-  padding: 20px 0
+  padding: 20px 0;
 }
 #helpPlaytest > div {
   text-align: center;
-  margin:0;
+  margin: 0;
 }
 
 #videos {
@@ -335,20 +335,21 @@ div.hamburger {
 }
 #videos .videoPanel {
   margin: 20px;
-  width:40%;
-  min-width:260px;
-  min-height:415px;
+  width: 40%;
+  min-width: 260px;
+  min-height: 415px;
 }
-#videos .videoPanel iframe{
-  width:100%;
+#videos .videoPanel iframe {
+  width: 100%;
 }
 #videos a {
   color: lightgreen;
 }
 
 #aboutMe {
-  background: linear-gradient( rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3) ), url(./images/universe2.jpg);
-  background-size:cover;
+  background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.3)),
+    url(./images/universe2.jpg);
+  background-size: cover;
   background-repeat: no-repeat;
   display: flex;
   justify-content: center;
@@ -363,19 +364,18 @@ div.hamburger {
   height: 260px;
   width: 260px;
 }
-#aboutMe .cavePaintingsImage{
+#aboutMe .cavePaintingsImage {
   width: 200px;
 }
-
 
 #contact {
   min-height: 0;
 }
 
-#footer{
-  width:100%;
+#footer {
+  width: 100%;
   margin-bottom: -20px;
-  height:75px;
+  height: 75px;
 }
 
 /* Utils */
@@ -384,21 +384,21 @@ div.hamburger {
   display: inline-block;
 }
 
-.darken{
+.darken {
   position: relative;
 }
-.darken *{
+.darken * {
   position: relative;
   z-index: 100;
 }
-.darken:before{
+.darken:before {
   position: absolute;
-  top:0;
-  left:0;
-  content:"";
-  height:100%;
-  width:100%;
-  background-color: rgba(0,0,0,.5);
+  top: 0;
+  left: 0;
+  content: "";
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .margin10 {
@@ -489,13 +489,13 @@ div.hamburger {
   transform: translate(-50%, -50%);
 }
 .sciFiPanel:before {
-  border-width:1px ;
+  border-width: 1px;
   border-radius: 12px;
   width: calc(100% + 6px);
   height: calc(100% + 6px);
 }
-.sciFiPanel.dark:before{
-  background-color:rgba(0, 0, 0, 0.5);
+.sciFiPanel.dark:before {
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .button {
@@ -511,18 +511,19 @@ div.hamburger {
   transition: 1s;
   cursor: pointer;
 }
-.button.yellow, body .yellow{
-  color:yellow;
+.button.yellow,
+body .yellow {
+  color: yellow;
 }
-.button.yellow:before, .button.yellow:after{
-  border-color:yellow;
+.button.yellow:before,
+.button.yellow:after {
+  border-color: yellow;
 }
 .button.yellow:hover {
   background-color: yellow !important;
 }
 
-@media(max-width: 1200px){
-  
+@media (max-width: 1200px) {
   .half {
     width: calc(45% - 20px);
     margin: 2%;
@@ -539,52 +540,52 @@ div.hamburger {
     width: calc(90%);
     margin: 5%;
   }
-  .sectionHead{
+  .sectionHead {
     width: 100%;
   }
 
   .sectionHead h1 {
     width: 90%;
-    padding-left:0;
-    padding-right:0;
+    padding-left: 0;
+    padding-right: 0;
     font-size: 1.5rem;
   }
-  .gallery{
-    margin:5%;
+  .gallery {
+    margin: 5%;
   }
-  .bgImage.small, .bgImage.big {
+  .bgImage.small,
+  .bgImage.big {
     width: 90vw;
-    padding:0px;
+    padding: 0px;
     min-height: 260px;
     min-width: 260px;
   }
   .menu ul li {
-
-  font-size: 1.2rem;
+    font-size: 1.2rem;
   }
 
-  #description .mechanics{
+  #description .mechanics {
     font-size: 1rem;
-    width:250px;
+    width: 250px;
   }
 }
 
-@media(max-width: 725px){
-  #description .mechanics{
+@media (max-width: 725px) {
+  #description .mechanics {
     font-size: 1rem;
-    width:calc(100% - 40px);
+    width: calc(100% - 40px);
   }
-  #description .mechanicsLink{
-    width:calc(100%);
+  #description .mechanicsLink {
+    width: calc(100%);
   }
 }
 
-@media(max-width:660px){
-  #videos .videoPanel{
-    width:90%;
+@media (max-width: 660px) {
+  #videos .videoPanel {
+    width: 90%;
   }
-  
-#description .mechanics{
-  min-width: 180px;
-}
+
+  #description .mechanics {
+    min-width: 180px;
+  }
 }
